@@ -14,7 +14,7 @@ public class Main {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AopConfig.class);
         DemoAnnotationService bean = context.getBean(DemoAnnotationService.class);
         DemoMethodService bean1 = context.getBean(DemoMethodService.class);
-
+        System.out.println("提交一行代码");
         bean.add();
         bean1.add1();
         context.close();
